@@ -41,7 +41,7 @@ export default {
                 if (status == 200) {
                     //保存token，如果用户没有登录直接通过url来到home组件。home会先验证是否有token。所以在登录页面将token存储起来到home时候验证
                     //不同组件之间值得传递可以用localStroage，setItem来存储值，getItem取出值
-                    localStorage.setItem('token',data.token)
+                    localStorage.setItem('token', data.token)
                     this.$router.push({
                         name: 'home'
                     })
