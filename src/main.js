@@ -7,10 +7,18 @@ import router from './router'
 // 引入element-ui插件
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 引入初始化的css文件
+import '@/assets/css/reset.css'
+
+import MyHttpServer from './plugins/http.js'
+// 回顾axios
+// import axios from 'axios'
+// Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+Vue.use(MyHttpServer)
 
 /* eslint-disable no-new */
 new Vue({
